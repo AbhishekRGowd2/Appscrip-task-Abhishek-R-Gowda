@@ -1,0 +1,345 @@
+:root{
+  --max-width:1200px;
+  --gap:20px;
+  --muted:#666;
+  --accent:#111;
+}
+*{box-sizing:border-box}
+body{margin:0;font-family:Inter,Arial,sans-serif;color:var(--accent);line-height:1.4;background:#fff}
+.container{max-width:var(--max-width);margin:0 auto;padding:0 16px}
+.site-header{border-bottom:1px solid #eee;background:#fff}
+.header-inner{display:flex;align-items:center;justify-content:space-between;padding:18px 0}
+.logo{font-weight:700}
+.top-nav a{margin-left:16px;color:var(--muted);text-decoration:none;font-size:14px}
+
+/* main */
+.page-title{text-align:center;margin:32px 0 6px;font-size:22px}
+.lead{text-align:center;color:var(--muted);margin:0 0 24px}
+
+/* layout */
+.layout{display:flex;gap:var(--gap);align-items:flex-start}
+.sidebar{width:240px;border-right:1px solid #f1f1f1;padding-right:16px}
+.sidebar h3{margin-top:0}
+.sidebar label{display:block;padding:8px 0;color:var(--muted);font-size:14px}
+.content{flex:1}
+.controls{display:flex;justify-content:space-between;align-items:center;margin-bottom:12px}
+.sort label{margin-right:8px}
+
+/* grid */
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;padding-bottom:40px}
+.card{border:1px solid #efefef;padding:12px;border-radius:8px;background:#fff}
+.img-wrap{width:100%;padding-top:80%;position:relative;overflow:hidden;border-radius:6px;background:#fafafa}
+.img-wrap img{position:absolute;top:0;left:0;right:0;bottom:0;width:100%;height:100%;object-fit:cover}
+.card-body{padding-top:8px}
+.card-title{font-size:14px;margin:0 0 8px;height:36px;overflow:hidden}
+.price{font-weight:700}
+
+/* rating section inside card */
+.rating {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 6px;
+}
+
+.stars {
+  color: #f5a623; /* gold color for stars */
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+
+.rating-text {
+  font-size: 12px;
+  color: var(--muted);
+}
+
+
+/* Header */
+.header-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 0;
+}
+
+.header-left .brand-icon {
+  width: 48px;
+  height: 48px;
+}
+
+.header-center .logo {
+  font-weight: 700;
+  font-size: 18px;
+  letter-spacing: 2px;
+  padding-left: 30px;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.icon-btn {
+  background: none;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  color: #111;
+}
+
+.lang-dropdown {
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.main-nav {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  padding: 12px 0;
+  border-top: 1px solid #f1f1f1;
+}
+
+.main-nav a {
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 13px;
+  color: #111;
+  letter-spacing: 1px;
+}
+.main-nav a:hover {
+  color: #666;
+}
+
+
+/* footer */
+.site-footer {
+  background:#000;
+  color:#fff;
+  font-size:14px;
+  margin-top:40px;
+}
+.footer-top {
+  display:flex;
+  justify-content:space-between;
+  gap:100px;
+  padding:40px 0;
+  flex-wrap:wrap;
+}
+.footer-col {
+  flex:1;
+  min-width:220px;
+  text-align: left;
+}
+.footer-col h3 {
+  font-size:14px;
+  margin-bottom:12px;
+  color:#fff;
+  text-transform:uppercase;
+}
+.footer-col p, .footer-col small {
+  color:#ccc;
+  margin:6px 0;
+}
+/* .subscribe-form {
+  display:flex;
+  margin-top:10px;
+}
+.subscribe-form input {
+  flex:1;
+  padding:10px;
+  border:none;
+  border-radius:4px 0 0 4px;
+}
+.subscribe-form button {
+  padding:10px 16px;
+  border:none;
+  background:#fff;
+  color:#000;
+  font-weight:bold;
+  border-radius:0 4px 4px 0;
+  cursor:pointer;
+} */
+
+/* Subscribe form side-by-side */
+.subscribe-form {
+  display: flex;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.subscribe-form input {
+  flex: 1; /* take most of the width */
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.subscribe-btn {
+  padding: 10px 16px;
+  border: 1px solid #444;
+  background: #000;
+  color: #aaa;
+  font-weight: bold;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+}
+
+.subscribe-btn:hover {
+  background: #fff;
+  color: #000;
+}
+.currency-select {
+  position: relative;
+  display: inline-block;
+}
+
+.currency-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 12px;
+  border: 1px solid #444;
+  border-radius: 4px;
+  background: #111;
+  color: #ccc;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.currency-btn img {
+  width: 20px;
+  height: 14px;
+  border-radius: 2px;
+}
+
+.currency-btn .arrow {
+  margin-left: auto;
+  font-size: 10px;
+}
+
+.currency-options {
+  display: none;
+  position: absolute;
+  top: 110%;
+  left: 0;
+  background: #222;
+  border: 1px solid #444;
+  border-radius: 4px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  z-index: 100;
+}
+
+.currency-options li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 12px;
+  color: #ccc;
+  cursor: pointer;
+}
+
+.currency-options li:hover {
+  background: #333;
+  color: #fff;
+}
+
+.currency-options img {
+  width: 20px;
+  height: 14px;
+  border-radius: 2px;
+}
+
+/* Show dropdown when active */
+.currency-select.active .currency-options {
+  display: block;
+}
+
+
+.footer-separator {
+  border:0;
+  border-top:1px solid #333;
+  margin:0;
+}
+
+.footer-bottom {
+  display:flex;
+  flex-direction:column;
+  padding:40px 0;
+}
+.footer-links {
+  display:flex;
+  justify-content:space-between;
+  gap:40px;
+  flex-wrap:wrap;
+}
+.footer-links ul {
+  list-style:none;
+  padding:0;
+  margin:0;
+}
+.footer-links ul li {
+  margin:6px 0;
+}
+.footer-links ul li a {
+  color:#ccc;
+  text-decoration:none;
+}
+.footer-links ul li a:hover {
+  color:#fff;
+}
+
+.social-icons a {
+  margin-right:12px;
+  color:#ccc;
+  text-decoration:none;
+}
+.social-icons a:hover {color:#fff}
+
+.payment-icons {
+  display:flex;
+  flex-wrap:wrap;
+  gap:10px;
+  margin-top:10px;
+}
+.payment-icons img {
+  height:28px;
+  background:#fff;
+  padding:4px 6px;
+  border-radius:4px;
+}
+
+.footer-copy {
+  border-top:1px solid #333;
+  padding:16px 0;
+  text-align:center;
+  font-size:13px;
+  color:#aaa;
+}
+
+/* responsive footer */
+@media (max-width:900px) {
+  .footer-top, .footer-links {
+    flex-direction:column;
+  }
+}
+
+
+/* responsive */
+@media (max-width:900px){
+  .grid{grid-template-columns:repeat(2,1fr)}
+  .sidebar{display:none}
+  .layout{gap:12px}
+}
+@media (max-width:480px){
+  .grid{grid-template-columns:1fr}
+  .page-title{font-size:18px}
+  .header-inner{padding:12px 0}
+  .logo{font-size:18px}
+}
