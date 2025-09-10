@@ -1,40 +1,57 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/pages/api-reference/create-next-app).
+* mettā muse Product Showcase
 
-## Getting Started
+This is a Next.js e-commerce demo application that fetches product data from FakeStoreAPI
+ and displays it with filtering, sorting, and SEO enhancements. It includes a fully responsive layout, category filtering, price/rating sorting, schema.org structured data, and a styled header/footer to simulate a real shopping experience.
 
-First, run the development server:
+* Features
 
-```bash
+Server-Side Rendering (SSR) with getServerSideProps for fresh product data
+
+Category Filtering (Electronics, Jewelry, Men’s Clothing, Women’s Clothing)
+
+Sorting Options (Popular by rating, Price: Low to High)
+
+Product Cards with images, prices, and ratings
+
+SEO Optimized with Open Graph, Twitter cards, and JSON-LD ProductCollection schema
+
+Currency Selector with flags and dropdown
+
+Responsive Layout with sidebar, grid, and adaptive footer
+
+Styled Components using custom CSS with modern, minimal design
+
+* Tech Stack
+
+Next.js
+ (React Framework)
+
+FakeStoreAPI
+ (Mock product data)
+
+Custom CSS for styling
+
+* Getting Started
+
+Clone the repository
+
+git clone https://github.com/your-username/metta-muse-demo.git
+cd metta-muse-demo
+
+
+Install dependencies
+
+npm install
+
+
+Run development server
+
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+Open http://localhost:3000
 
-[API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+* Production Demo
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) instead of React pages.
-
-This project uses [`next/font`](https://nextjs.org/docs/pages/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn-pages-router) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/pages/building-your-application/deploying) for more details.
+Deployed on Vercel:
+* https://appscrip-next.vercel.app
